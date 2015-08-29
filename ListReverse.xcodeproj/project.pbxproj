@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B509C7401B916841001CE39D /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = B509C73F1B916841001CE39D /* LinkedList.m */; };
 		B57728CB1B0F3CC200BB5348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57728CA1B0F3CC200BB5348 /* main.m */; };
 		B57728D31B0F3CF400BB5348 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = B57728D21B0F3CF400BB5348 /* Node.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B509C73E1B916841001CE39D /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		B509C73F1B916841001CE39D /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		B509C7411B916996001CE39D /* NodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeProtocol.h; sourceTree = "<group>"; };
 		B57728C71B0F3CC100BB5348 /* ListReverse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ListReverse; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57728CA1B0F3CC200BB5348 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B57728D11B0F3CF400BB5348 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
@@ -63,6 +67,9 @@
 				B57728CA1B0F3CC200BB5348 /* main.m */,
 				B57728D11B0F3CF400BB5348 /* Node.h */,
 				B57728D21B0F3CF400BB5348 /* Node.m */,
+				B509C73E1B916841001CE39D /* LinkedList.h */,
+				B509C73F1B916841001CE39D /* LinkedList.m */,
+				B509C7411B916996001CE39D /* NodeProtocol.h */,
 			);
 			path = ListReverse;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B509C7401B916841001CE39D /* LinkedList.m in Sources */,
 				B57728CB1B0F3CC200BB5348 /* main.m in Sources */,
 				B57728D31B0F3CF400BB5348 /* Node.m in Sources */,
 			);
@@ -241,6 +249,7 @@
 				B57728D01B0F3CC200BB5348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NodeProtocol.h"
 
-@interface Node : NSObject
+@interface Node : NSObject <NodeProtocol>
 
-@property (assign, nonatomic) NSInteger number;
+- (nonnull instancetype)initWithTag:(NSInteger)tag;
 
-@property (weak, nonatomic) Node *next;
+@property (assign, nonatomic) NSInteger tag;
+
+@property (strong, nonatomic, nullable) Node *next;
 
 @end

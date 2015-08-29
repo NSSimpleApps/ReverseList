@@ -8,67 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "Node.h"
-
-Node* reverse(Node* head) {
-    
-    if (head.next == nil)
-        return head;
-    
-    Node* currentNode = head.next;
-    
-    head.next = nil;
-    
-    while (currentNode != nil) {
-        
-        Node *nextNode = currentNode.next;
-        
-        currentNode.next = head;
-        head = currentNode;
-        
-        currentNode = nextNode;
-    }
-    
-    return currentNode;
-}
-
-void printNode(Node* const head) {
-    
-    Node *node = head;
-    
-    do {
-        
-        NSLog(@"number = %ld", (long)node.number);
-        node = node.next;
-    } while (node != nil);
-}
+#import "LinkedList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Node *node1 = [Node new];
-        node1.number = 1;
+        LinkedList *linkedList = [[LinkedList alloc] initWithNode:[[Node alloc] initWithTag:-1]];
         
-        Node *node2 = [Node new];
-        node2.number = 2;
+        /*for (NSInteger tag = 0; tag < 5; tag++) {
+            
+            [linkedList add:[[Node alloc] initWithTag:tag]];
+        }*/
         
-        Node *node3 = [Node new];
-        node3.number = 3;
-        
-        Node *node4 = [Node new];
-        node4.number = 4;
-        
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = nil;
-        
-        printNode(node1);
-        
-        reverse(node1);
-        
-        printNode(node4);
-        
-        NSLog(@"%@", node1.next);
+        NSLog(@"\n%@", linkedList);
+        [linkedList removeFirstNode];
+        NSLog(@"\n%@", linkedList);
+        [linkedList add:[[Node alloc] initWithTag:10]];
+        NSLog(@"\n%@", linkedList);
     }
     return 0;
 }
