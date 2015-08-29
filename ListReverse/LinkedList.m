@@ -85,6 +85,12 @@
 
 - (void)removeLastNode {
     
+    if (!self.first.next) {
+        
+        self.first = nil;
+        return;
+    }
+    
     id<NodeProtocol> lastNode = self.first;
     id<NodeProtocol> pNode = nil;
     

@@ -13,17 +13,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LinkedList *linkedList = [[LinkedList alloc] initWithNode:[[Node alloc] initWithTag:-1]];
-        
-        /*for (NSInteger tag = 0; tag < 5; tag++) {
-            
-            [linkedList add:[[Node alloc] initWithTag:tag]];
-        }*/
+        LinkedList *linkedList = [[LinkedList alloc] initWithNode:[[Node alloc] initWithTag:1]];
         
         NSLog(@"\n%@", linkedList);
-        [linkedList removeFirstNode];
-        NSLog(@"\n%@", linkedList);
-        [linkedList add:[[Node alloc] initWithTag:10]];
+        [linkedList removeLastNode];
         NSLog(@"\n%@", linkedList);
     }
     return 0;
