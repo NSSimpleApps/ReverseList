@@ -13,11 +13,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        LinkedList *linkedList = [[LinkedList alloc] initWithNode:[[Node alloc] initWithTag:1]];
+        /*LinkedList *linkedList = [[LinkedList alloc] initWithNode:[[Node alloc] initWithTag:1]];
         
         NSLog(@"\n%@", linkedList);
         [linkedList removeLastNode];
-        NSLog(@"\n%@", linkedList);
+        NSLog(@"\n%@", linkedList);*/
+        
+        Node *node = [[Node alloc] initWithTag:1];
+        
+        NSLog(@"%@", node);
     }
     return 0;
 }

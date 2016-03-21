@@ -7,6 +7,7 @@
 //
 
 #import "Node.h"
+#import <objc/runtime.h>
 
 @implementation Node
 
@@ -16,7 +17,7 @@
     
     if (self) {
         
-        self.tag = tag;
+        self.tag = tag;        
     }
     return self;
 }
@@ -46,9 +47,9 @@
     return [super isEqual:object];
 }
 
-/*- (void)dealloc {
+- (void)dealloc {
     
     NSLog(@"Deallocating node with tag = %ld", (long)self.tag);
-}*/
+}
 
 @end
